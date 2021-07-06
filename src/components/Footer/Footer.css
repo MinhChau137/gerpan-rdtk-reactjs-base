@@ -1,0 +1,140 @@
+
+.logup-wrapper {
+  background-color: var(--color-background-footer_1);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.logup h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.logup h1,
+.logup h6 {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+.logup .input {
+  margin: 20px 0;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+}
+
+.logup .input input {
+  width: 30%;
+  padding: 10px 30px;
+  border: 1px solid var(--color-border-footer);
+  margin: 0;
+}
+
+.logup .input button {
+  background-color: var(--color-background-main);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.logup ul.icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  margin: 50px 0 0;
+}
+.logup .icons li{
+  border-radius: 50%;
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+.logup .icons li a{
+  color: var(--color-icon);
+}
+.logup .icons li.facebook{
+  background-color: var(--color-facebook);
+}
+.logup .icons li.instagram{
+  background-color: var(--color-instagram);
+}
+.logup .icons li.youtube{
+  background-color: var(--color-youtube);
+}
+.logup .icons i{
+  font-size: 18px;
+  padding: 8px;
+}
+/* infor */
+.infor{
+  background-color: var(--color-background-main);
+  color: var(--color-icon);
+  padding: 50px 30px;
+}
+.infor h2{
+  font-size: 16px;
+  font-weight: 700;
+}
+.infor .infor-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.infor ul{
+  list-style-type: none;
+}
+.infor li, p{
+  margin: 5px 0;
+  line-height: 1.5rem;
+}
+.infor a{
+  color: var(--color-icon);
+  text-decoration: none;
+}
+.infor .infor-item{
+  margin: 20px 0;
+}
+.infor .infor-item .images{
+  display: flex;
+  flex-direction: column;
+}
+.infor .infor-item img{
+  vertical-align: middle;
+  height: 40px;
+  margin: 5px 0;
+}
+.infor h1, h6, .icon, .infor-item{
+  animation: fadeLeft 1.5s 0.2s;
+}
+.infor .input{
+  animation: fadeDown 1.5s 0.2s;
+}
+
+@keyframes fadeLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeDown{
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

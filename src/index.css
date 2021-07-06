@@ -1,0 +1,51 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+:root{
+  --color-primary: rgba(7, 7, 7, 0.5);
+  --color-border-bottom: #EFEFF4;
+  --color-background-footer_1: #EFEFF4;
+  --color-background-button: #85177b;
+  --color-background-main: #85177b;
+  --color-background-button-hover: white;
+  --color-border-input: #C8C7CC;
+  --color-border-product: #ddd;
+  --color-icon:white;
+
+  --color-facebook: #4267b2;
+  --color-instagram:#ed3e1f;
+  --color-youtube: #c9170a;
+  --color-twitter: #55acee;
+  --color-in: #0077b5;
+
+  --color-tag-onlyStore: #f66d52;
+  --color-tag-sale: white;
+  --color-h2: #2a2a2a;
+  --color-background-cate: #85177b;
+  --color-a: #606060;
+  --color-child-active: #f6f6f6;
+  --color-hover: #85177b;
+  --color-text-white: white;
+  --color-text-black: black;
+}
+a{
+  text-decoration: none;
+  color: var(--color-primary);
+}
+a:hover{
+  text-decoration: none;
+  color: var(--color-hover);
+}
+ul{
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+button:focus{
+  outline: none;
+}
+input:focus-visible{
+  outline: none;
+}

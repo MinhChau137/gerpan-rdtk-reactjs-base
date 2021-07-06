@@ -14,14 +14,21 @@ const Product = () => {
 
   // local state
   const [filter, setFilter] = useState({
-    page: 1,
-    limit: 8,
-    name: ''
+    name: '',
+    code: '',
+    order: '',
+    type: '',
+    money: '',
+    tag: '',
+    page: 0,
+    pageSize: 12
   });
 
   // global state
   const productsCount = useSelector(selectProductsCount);
   const products = useSelector(selectProducts);
+
+
 
   useEffect(() => {
     dispatch(fetchGetAllProducts(filter));

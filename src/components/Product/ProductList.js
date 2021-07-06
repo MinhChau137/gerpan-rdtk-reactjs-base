@@ -1,16 +1,16 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import ProductCard from './ProductCard';
 import Pagination from 'src/components/Pagination';
+import Card from '../Card/Card';
 
 export default function ProductTable({ products, productsCount, filter, setFilter }) {
   return (
     <>
       <Row>
-        {products.length &&
+        {!!products &&
           products.map((product, index) => (
             <Col xs={6} md={3}>
-              <ProductCard key={index} product={product} />
+              <Card key={index} product = {product} />
             </Col>
           ))}
       </Row>

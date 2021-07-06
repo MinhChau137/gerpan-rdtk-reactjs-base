@@ -1,0 +1,57 @@
+.card-banner {
+  padding: 0;
+}
+.wrapper.row{
+  margin: 0;
+}
+.wrapper .fadeRight {
+  animation: fadeRight 1s 0.5s;
+}
+
+.wrapper .fadeLeft {
+  animation: fadeLeft 1s 0.5s;
+}
+
+.card-banner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-banner .infor-card {
+  background-color: var(--color-border-bottom);
+  padding: 20px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-banner .infor-card a {
+  text-decoration: none;
+  color: var(--color-background-main);
+}
+
+.card-banner .infor-card .title {
+  font-weight: bolder;
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
